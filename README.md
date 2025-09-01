@@ -25,12 +25,6 @@ El proyecto contiene los siguientes archivos y carpetas:
 - Completa el cuestionario en la sección "Mi Decisión" para reflexionar sobre tus preferencias.
 - Utiliza el asistente virtual para obtener más información y apoyo.
 
-## Recursos
-
-- [Brainstorming.JPG](assets/Brainstorming.JPG): Imagen relacionada con el proyecto.
-- [memoria.pdf](assets/memoria.pdf): Documento que proporciona información adicional sobre el proyecto.
-- [Navicolon.pdf](assets/Navicolon.pdf): Documento que detalla el cribado de cáncer colorrectal.
-
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si deseas contribuir, por favor abre un issue o envía un pull request.
