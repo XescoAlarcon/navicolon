@@ -1,3 +1,4 @@
+<!-- filepath: /var/www/html/navicolon/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVICOLON - Decisión Informada sobre Cribado de Cáncer Colorrectal</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+    <script src="js/assistant.js" defer></script>
 </head>
 <body>
     <header>
@@ -88,26 +93,16 @@
                 
                 <div class="info-grid">
                     <div class="info-card">
-                        <h3>¿Qué es?</h3>
-                        <p>Es un cáncer que se desarrolla en el colon o el recto, parte del sistema digestivo. Generalmente comienza como pólipos benignos que pueden convertirse en cáncer con el tiempo.</p>
+                        <p>Información 1</p>
                     </div>
                     <div class="info-card">
-                        <h3>Factores de Riesgo</h3>
-                        <ul style="margin-left: 1.5rem;">
-                            <li>Edad (mayor de 50 años)</li>
-                            <li>Antecedentes familiares</li>
-                            <li>Dieta rica en carnes rojas</li>
-                            <li>Sedentarismo</li>
-                            <li>Tabaquismo y alcohol</li>
-                        </ul>
+                        <p>Información 2</p>
                     </div>
                     <div class="info-card">
-                        <h3>Síntomas</h3>
-                        <p>En etapas tempranas puede no presentar síntomas. Por eso es importante el cribado. Los síntomas pueden incluir cambios en hábitos intestinales, sangre en heces, dolor abdominal persistente.</p>
+                        <p>Información 3</p>
                     </div>
                     <div class="info-card">
-                        <h3>El Test de Cribado</h3>
-                        <p>El test de sangre oculta en heces (SOH) es una prueba sencilla y no invasiva que detecta pequeñas cantidades de sangre no visible. Se realiza en casa y es gratuito.</p>
+                        <p>Información 4</p>
                     </div>
                 </div>
             </div>
@@ -119,8 +114,7 @@
                 </div>
                 <div id="screening-steps">
                     <div class="info-card">
-                        <h3>Paso 1: Invitación</h3>
-                        <p>Recibirás una carta o SMS invitándote a participar si tienes entre 50 y 69 años.</p>
+                        <p>Paso 1</p>
                     </div>
                 </div>
                 <button class="btn btn-primary" onclick="showNextStep()">Siguiente paso</button>
@@ -135,26 +129,10 @@
                 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                     <div style="background: #c6f6d5; padding: 1.5rem; border-radius: 0.5rem;">
-                        <h2 style="color: #22543d;">✓ Beneficios</h2>
-                        <ul style="margin-left: 1.5rem; margin-top: 1rem;">
-                            <li>Detección temprana cuando el tratamiento es más efectivo</li>
-                            <li>Prevención al detectar y eliminar pólipos</li>
-                            <li>Reducción de mortalidad hasta un 30%</li>
-                            <li>Prueba sencilla y no invasiva</li>
-                            <li>Gratuita dentro del programa público</li>
-                            <li>Tranquilidad si el resultado es negativo</li>
-                        </ul>
+                        <p>Beneficio 1</p>
                     </div>
                     <div style="background: #fed7d7; padding: 1.5rem; border-radius: 0.5rem;">
-                        <h2 style="color: #742a2a;">⚠ Posibles Riesgos</h2>
-                        <ul style="margin-left: 1.5rem; margin-top: 1rem;">
-                            <li>Falsos positivos (ansiedad innecesaria)</li>
-                            <li>Falsos negativos (falsa seguridad)</li>
-                            <li>Necesidad de colonoscopia si test positivo</li>
-                            <li>Riesgos mínimos de la colonoscopia</li>
-                            <li>Posible sobrediagnóstico</li>
-                            <li>Ansiedad durante el proceso</li>
-                        </ul>
+                        <p>Riesgo 1</p>
                     </div>
                 </div>
             </div>
@@ -163,16 +141,13 @@
                 <h2>Datos importantes</h2>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number">1 de 20</div>
-                        <div class="stat-label">Personas desarrollarán cáncer colorrectal</div>
+                        <p>Dato 1</p>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">60-70%</div>
-                        <div class="stat-label">Participación recomendada para efectividad</div>
+                        <p>Dato 2</p>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">95%</div>
-                        <div class="stat-label">Supervivencia si se detecta en fase temprana</div>
+                        <p>Dato 3</p>
                     </div>
                 </div>
             </div>
@@ -188,57 +163,15 @@
                     <h2>Reflexiona sobre estos aspectos:</h2>
                     
                     <div class="quiz-question">
-                        <h3>1. ¿Qué importancia tiene para ti la prevención?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Muy importante - Prefiero prevenir que curar
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Importante - Me gusta cuidar mi salud
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Moderada - Solo si es necesario
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Baja - Prefiero no pensar en ello
-                            </div>
-                        </div>
+                        <p>Pregunta 1</p>
                     </div>
 
                     <div class="quiz-question">
-                        <h3>2. ¿Cómo manejas la incertidumbre médica?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Prefiero saber, aunque pueda preocuparme
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Me genera algo de ansiedad pero lo gestiono
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Me causa mucha ansiedad
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Prefiero no saber si no hay síntomas
-                            </div>
-                        </div>
+                        <p>Pregunta 2</p>
                     </div>
 
                     <div class="quiz-question">
-                        <h3>3. ¿Tienes antecedentes familiares?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Sí, familiares directos
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                Sí, familiares lejanos
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                No tengo antecedentes
-                            </div>
-                            <div class="quiz-option" onclick="selectOption(this)">
-                                No lo sé
-                            </div>
-                        </div>
+                        <p>Pregunta 3</p>
                     </div>
 
                     <button class="btn btn-primary" onclick="showDecisionResult()">Ver mi perfil de decisión</button>
@@ -258,28 +191,13 @@
                 
                 <div class="info-grid">
                     <div class="info-card">
-                        <h3>📞 Contacto</h3>
-                        <p>Programa de Cribado de Cáncer Colorrectal</p>
-                        <p>Teléfono: 93 260 72 05</p>
-                        <p>Email: cribado@iconcologia.net</p>
+                        <p>Recurso 1</p>
                     </div>
                     <div class="info-card">
-                        <h3>🏥 Centros de Atención</h3>
-                        <p>Encuentra tu centro más cercano:</p>
-                        <button class="btn btn-secondary" onclick="alert('Función en desarrollo')">Buscar centro</button>
+                        <p>Recurso 2</p>
                     </div>
                     <div class="info-card">
-                        <h3>📚 Material Descargable</h3>
-                        <ul style="margin-left: 1.5rem;">
-                            <li>Guía completa del cribado (PDF)</li>
-                            <li>Preguntas frecuentes</li>
-                            <li>Instrucciones del test</li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <h3>🤝 Grupos de Apoyo</h3>
-                        <p>Conecta con otras personas en tu situación</p>
-                        <button class="btn btn-secondary" onclick="alert('Función en desarrollo')">Ver grupos</button>
+                        <p>Recurso 3</p>
                     </div>
                 </div>
             </div>
@@ -287,16 +205,13 @@
             <div class="card">
                 <h2>Preguntas Frecuentes</h2>
                 <div class="info-card">
-                    <h3>¿El test duele?</h3>
-                    <p>No, el test de sangre oculta en heces es completamente indoloro. Solo requiere recoger una pequeña muestra de heces en casa.</p>
+                    <p>Pregunta 1</p>
                 </div>
                 <div class="info-card">
-                    <h3>¿Cada cuánto debo hacerme el test?</h3>
-                    <p>Si el resultado es negativo, se recomienda repetir el test cada 2 años mientras estés en el rango de edad del programa (50-69 años).</p>
+                    <p>Pregunta 2</p>
                 </div>
                 <div class="info-card">
-                    <h3>¿Qué pasa si el test es positivo?</h3>
-                    <p>Un resultado positivo no significa que tengas cáncer. Significa que se ha detectado sangre y necesitas una colonoscopia para determinar la causa.</p>
+                    <p>Pregunta 3</p>
                 </div>
             </div>
         </div>
@@ -320,14 +235,18 @@
                 ¡Hola! Soy tu asistente virtual. Puedo ayudarte con:
                 <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
                     <li>Información sobre el cribado</li>
-                    <li>Explicar beneficios y riesgos</li>
-                    <li>Guiarte en tu decisión</li>
-                    <li>Resolver dudas específicas</li>
+                    <li>Beneficios y riesgos</li>
+                    <li>Recursos adicionales</li>
                 </ul>
                 ¿En qué puedo ayudarte?
             </div>
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NAVICOLON. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
