@@ -54,6 +54,16 @@ nav {
     flex-wrap: wrap;
 }
 
+.subheader {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
