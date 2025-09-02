@@ -62,6 +62,7 @@ nav {
     padding: 1rem 0 0 0;
     flex-wrap: wrap;
     text-align: center;
+    @media (width <= 800px) { display: none; }
 }
 
 .logo {
@@ -174,6 +175,10 @@ p {
     border-radius: 1rem;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
+}
+
+.welcome-hero p {
+    @media (width > 800px) { display: none; }
 }
 
 .feature-grid {
