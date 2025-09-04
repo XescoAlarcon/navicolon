@@ -10,7 +10,7 @@ function toggleAssistant() {
 
 function showAssistant() {
     toggleAssistant();
-    addMessage("¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte?");
+    // saddMessage("¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte?");
 }
 
 function addMessage(message) {

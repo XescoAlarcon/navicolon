@@ -220,6 +220,7 @@ p {
     padding: 1.5rem;
     border-radius: 0.5rem;
     border-left: 4px solid var(--accent-color);
+    margin-bottom: 0.5rem;
 }
 
 /* Interactive Elements */
