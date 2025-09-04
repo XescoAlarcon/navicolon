@@ -3,8 +3,8 @@
 }
 
 .info {
-    border: 1px solid darkgray;
-    background-color: white;
+    border: 1px solid #a9a9a9;
+    background-color: #ffffffcc;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
     width: 250px;
