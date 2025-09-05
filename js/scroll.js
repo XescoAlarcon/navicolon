@@ -7,7 +7,7 @@ const innerHeight = document.querySelector('#innerHeight'),
     inicio = document.querySelector('#inicio'),
     final = document.querySelector('#final');
 
-// Para saber la dirección del scroll cuando sube
+// Para saber la dirección del scroll cuando sube y baja
 let previousScrollY = 0;
 
 const onscroll = () => {
@@ -16,7 +16,9 @@ const onscroll = () => {
     scrollHeight.innerHTML = document.body.scrollHeight;
     scrollY.innerHTML = Math.trunc(window.scrollY);
 
-    if (window.scrollY === 0) {
+    // Inicio
+
+    if (window.scrollY >= 40 && window.scrollY <=60 && previousScrollY > window.scrollY) {
         inicio.innerHTML = parseInt(inicio.innerHTML) + 1;
     }
 
