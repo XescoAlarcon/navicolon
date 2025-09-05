@@ -1,5 +1,38 @@
 :root {
     font-family: sans-serif;
+    --top-bar-top: 40px;
+    --top-bar-color: rgba(20, 81, 224, 0.7);
+    --bottom-bar-color: rgba(41, 173, 112, 0.7);
+    --bottom-bar-bottom: 40px;
+    --bar-height: 40px;
+}
+
+h1{
+    margin-block-start: 0;
+}
+
+.bar {
+    background-image: repeating-linear-gradient(-45deg,
+            rgba(255, 255, 255, 0.05) 0px,
+            rgba(255, 255, 255, 0.05) 2px,
+            transparent 2px,
+            transparent 6px);
+
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: var(--bar-height);
+    z-index: 2;
+}
+
+.top-bar {
+    top: var(--top-bar-top);
+    background-color: var(--top-bar-color);
+}
+
+.bottom-bar {
+    bottom: var(--bottom-bar-bottom);
+    background-color: var(--bottom-bar-color);
 }
 
 .info {
@@ -16,6 +49,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 3;
 
 }
 
@@ -54,12 +88,29 @@
 
 .section2 {
     background-color: blueviolet;
+    display: none;
 }
 
 .section3 {
     background-color: crimson;
+    display: none;
+}
+
+.section4 {
+    background-color: chartreuse;
+    display: none;
+}
+
+.section5 {
+    background-color: coral;
+    display: none;
+}
+
+.section6 {
+    background-color:gold;
+    display: none;
 }
 
 p.trademark {
-    text-align:center;
+    text-align: center;    
 }
