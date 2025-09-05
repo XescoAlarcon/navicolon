@@ -5,7 +5,12 @@ const innerHeight = document.querySelector('#innerHeight'),
     scrollY = document.querySelector('#scrollY'),
     previousScrollYlbl = document.querySelector('#previousScrollYlbl'),
     inicio = document.querySelector('#inicio'),
-    final = document.querySelector('#final');
+    final = document.querySelector('#final'),
+    trademark = document.querySelector('.trademark');
+
+// Forzamos la posición del tardemak (o footer o lo que sea) para tener siempre scroll independientemente del contenido de la página y del tamaño del viewport
+//trademark.style.top = (document.body.scrollHeight + 200).toString() + "px";
+
 
 // Para saber la dirección del scroll cuando sube y baja
 let previousScrollY = 0;
