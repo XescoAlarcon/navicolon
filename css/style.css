@@ -62,7 +62,10 @@ nav {
     padding: 1rem 0 0 0;
     flex-wrap: wrap;
     text-align: center;
-    @media (width <= 800px) { display: none; }
+
+    @media (width <=800px) {
+        display: none;
+    }
 }
 
 .logo {
@@ -178,7 +181,33 @@ p {
 }
 
 .welcome-hero p {
-    @media (width > 800px) { display: none; }
+    @media (width > 800px) {
+        display: none;
+    }
+}
+
+#screening-steps {
+    margin-bottom: 2rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0;
+    width: 100%;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+#screening-steps::-webkit-scrollbar {
+  display: none;
+}
+
+#screening-steps>.info-card {
+    /* scroll-margin: 15px; */
+    flex: 0 0 100%;
+    scroll-snap-align: end;
+    align-items: center;
+    justify-content: center;
 }
 
 .feature-grid {
