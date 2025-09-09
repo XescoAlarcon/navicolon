@@ -131,8 +131,16 @@
             <div class="card">
                 <h2>¿Cómo funciona el programa de cribado?</h2>
                 <div class="progress-container">
-                    <div class="progress-bar" style="width: 50%"></div>
+                    <div class="progress-bar" id="stepProgress" style="width: 33.33%"></div>
                 </div>
+                
+                <!-- Indicadores de pasos -->
+                <div class="step-indicators" style="display: flex; justify-content: center; gap: 0.5rem; margin: 1rem 0;">
+                    <span class="step-dot active" data-step="0"></span>
+                    <span class="step-dot" data-step="1"></span>
+                    <span class="step-dot" data-step="2"></span>
+                </div>
+                
                 <div id="screening-steps">
                     <div class="info-card">
                         <h3>Paso 1</h3>
@@ -148,7 +156,10 @@
                     </div>
 
                 </div>
-                <button class="btn btn-primary" onclick="showNextStep()">Siguiente paso</button>
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="showPreviousStep()">Paso anterior</button>
+                    <button class="btn btn-primary" onclick="showNextStep()">Siguiente paso</button>
+                </div>
             </div>
         </div>
 
